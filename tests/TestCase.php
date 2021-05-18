@@ -3,8 +3,8 @@
 namespace Marcoguidara\QuickResponseCache\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Marcoguidara\QuickResponseCache\QuickResponseCacheServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
