@@ -1,6 +1,6 @@
 <?php
 
-namespace Marcoguidara\QuickResponseCache\Tests;
+namespace MarcoGuidara\QuickResponseCache\Tests;
 
 class ExampleTest extends TestCase
 {

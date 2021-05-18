@@ -1,6 +1,6 @@
 <?php
 
-namespace Marcoguidara\QuickResponseCache\Database\Factories;
+namespace MarcoGuidara\QuickResponseCache\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

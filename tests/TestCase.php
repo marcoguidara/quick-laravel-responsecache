@@ -1,9 +1,9 @@
 <?php
 
-namespace Marcoguidara\QuickResponseCache\Tests;
+namespace MarcoGuidara\QuickResponseCache\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Marcoguidara\QuickResponseCache\QuickResponseCacheServiceProvider;
+use MarcoGuidara\QuickResponseCache\QuickResponseCacheServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Marcoguidara\\QuickResponseCache\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'MarcoGuidara\\QuickResponseCache\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

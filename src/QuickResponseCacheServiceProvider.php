@@ -1,8 +1,8 @@
 <?php
 
-namespace Marcoguidara\QuickResponseCache;
+namespace MarcoGuidara\QuickResponseCache;
 
-use Marcoguidara\QuickResponseCache\Commands\QuickResponseCacheCommand;
+use MarcoGuidara\QuickResponseCache\Commands\QuickResponseCacheCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

@@ -32,13 +32,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Marcoguidara\\QuickResponseCache\\": "src",
-            "Marcoguidara\\QuickResponseCache\\Database\\Factories\\": "database/factories"
+            "MarcoGuidara\\QuickResponseCache\\": "src",
+            "MarcoGuidara\\QuickResponseCache\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Marcoguidara\\QuickResponseCache\\Tests\\": "tests"
+            "MarcoGuidara\\QuickResponseCache\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -52,10 +52,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Marcoguidara\\QuickResponseCache\\QuickResponseCacheServiceProvider"
+                "MarcoGuidara\\QuickResponseCache\\QuickResponseCacheServiceProvider"
             ],
             "aliases": {
-                "QuickResponseCache": "Marcoguidara\\QuickResponseCache\\QuickResponseCacheFacade"
+                "QuickResponseCache": "MarcoGuidara\\QuickResponseCache\\QuickResponseCacheFacade"
             }
         }
     },

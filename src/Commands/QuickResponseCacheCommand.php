@@ -1,6 +1,6 @@
 <?php
 
-namespace Marcoguidara\QuickResponseCache\Commands;
+namespace MarcoGuidara\QuickResponseCache\Commands;
 
 use Illuminate\Console\Command;
 

@@ -36,13 +36,13 @@ composer require marcoguidara/quick-laravel-responsecache
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Marcoguidara\QuickResponseCache\QuickResponseCacheServiceProvider" --tag="quick-laravel-responsecache-migrations"
+php artisan vendor:publish --provider="MarcoGuidara\QuickResponseCache\QuickResponseCacheServiceProvider" --tag="quick-laravel-responsecache-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Marcoguidara\QuickResponseCache\QuickResponseCacheServiceProvider" --tag="quick-laravel-responsecache-config"
+php artisan vendor:publish --provider="MarcoGuidara\QuickResponseCache\QuickResponseCacheServiceProvider" --tag="quick-laravel-responsecache-config"
 ```
 
 This is the contents of the published config file:
@@ -55,7 +55,7 @@ return [
 ## Usage
 
 ```php
-$quick-laravel-responsecache = new Marcoguidara\QuickResponseCache();
+$quick-laravel-responsecache = new MarcoGuidara\QuickResponseCache();
 echo $quick-laravel-responsecache->echoPhrase('Hello, Spatie!');
 ```
 

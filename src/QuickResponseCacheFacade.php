@@ -1,11 +1,11 @@
 <?php
 
-namespace Marcoguidara\QuickResponseCache;
+namespace MarcoGuidara\QuickResponseCache;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Marcoguidara\QuickResponseCache\QuickResponseCache
+ * @see \MarcoGuidara\QuickResponseCache\QuickResponseCache
  */
 class QuickResponseCacheFacade extends Facade
 {
