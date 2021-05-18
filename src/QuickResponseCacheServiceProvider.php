@@ -2,9 +2,9 @@
 
 namespace Marcoguidara\QuickResponseCache;
 
+use Marcoguidara\QuickResponseCache\Commands\QuickResponseCacheCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Marcoguidara\QuickResponseCache\Commands\QuickResponseCacheCommand;
 
 class QuickResponseCacheServiceProvider extends PackageServiceProvider
 {
