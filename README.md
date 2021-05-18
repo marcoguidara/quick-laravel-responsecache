@@ -1,4 +1,4 @@
-# Response cache functionality with minimal configuration..
+# Response cache functionality with minimal configuration.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/marcoguidara/quick-laravel-responsecache.svg?style=flat-square)](https://packagist.org/packages/marcoguidara/quick-laravel-responsecache)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/marcoguidara/quick-laravel-responsecache/run-tests?label=tests)](https://github.com/marcoguidara/quick-laravel-responsecache/actions?query=workflow%3Arun-tests+branch%3Amain)
