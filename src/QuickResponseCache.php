@@ -16,7 +16,7 @@ trait QuickResponseCache
 
         if (config('quick-responsecache.enabled')) {
             foreach (Events::ALLOWED as $event) {
-                static:: $event(fn() => ResponseCache::clear());
+                static:: $event(fn () => ResponseCache::clear());
             }
         }
     }
