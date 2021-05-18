@@ -1,17 +1,17 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "marcoguidara/quick-laravel-responsecache",
+    "description": "Grant response cache functionality to app models with minimal configuration.",
     "keywords": [
-        ":vendor_name",
+        "marcoguidara",
         "laravel",
-        "package_slug"
+        "quick-laravel-responsecache"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/marcoguidara/quick-laravel-responsecache",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Marco Guidara",
+            "email": "7marcog7@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Marcoguidara\\QuickResponseCache\\": "src",
+            "Marcoguidara\\QuickResponseCache\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Marcoguidara\\QuickResponseCache\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Marcoguidara\\QuickResponseCache\\QuickResponseCacheServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "QuickResponseCache": "Marcoguidara\\QuickResponseCache\\QuickResponseCacheFacade"
             }
         }
     },
