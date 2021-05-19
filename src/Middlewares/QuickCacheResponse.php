@@ -9,7 +9,6 @@ use Spatie\ResponseCache\Middlewares\CacheResponse;
 
 class QuickCacheResponse
 {
-
     protected CacheResponse $cache_response;
 
     public function __construct(CacheResponse $cache_response)
@@ -26,7 +25,7 @@ class QuickCacheResponse
      */
     public function handle(Request $request, Closure $next)
     {
-        if (!QuickResponseCache::isEnabled()) {
+        if (! QuickResponseCache::isEnabled()) {
             return $next($request);
         }
 
