@@ -29,6 +29,6 @@ class QuickCacheResponse
             return $next($request);
         }
 
-        return $this->cache_response->handle($request, $next);
+        return $this->cache_response->handle($request, $next, config('quick-responsecache.cache_lifetime_in_seconds'));
     }
 }
