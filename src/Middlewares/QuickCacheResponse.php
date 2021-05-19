@@ -25,7 +25,7 @@ class QuickCacheResponse
      */
     public function handle(Request $request, Closure $next)
     {
-        if (! QuickResponseCache::isEnabled()) {
+        if (!QuickResponseCache::isEnabled()) {
             return $next($request);
         }
 

@@ -6,7 +6,7 @@ use GeneaLabs\LaravelPivotEvents\Traits\PivotEventTrait;
 use MarcoGuidara\QuickResponseCache\Abstracts\EventAbstract;
 use Spatie\ResponseCache\Facades\ResponseCache;
 
-trait EnableQuickResposeCache
+trait QuickResposeCacheClear
 {
     use PivotEventTrait;
 
