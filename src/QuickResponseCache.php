@@ -2,8 +2,8 @@
 
 namespace MarcoGuidara\QuickResponseCache;
 
-use Events;
 use GeneaLabs\LaravelPivotEvents\Traits\PivotEventTrait;
+use MarcoGuidara\QuickResponseCache\Abstracts\EventAbstract;
 use Spatie\ResponseCache\Facades\ResponseCache;
 
 trait QuickResponseCache
@@ -15,7 +15,7 @@ trait QuickResponseCache
         parent::boot();
 
         if (config('quick-responsecache.enabled')) {
-            foreach (Events::ALLOWED as $event) {
+            foreach (EventAbstract::ALLOWED as $event) {
                 static:: $event(fn () => ResponseCache::clear());
             }
         }

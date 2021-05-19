@@ -20,7 +20,7 @@ composer require marcoguidara/quick-laravel-responsecache
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="MarcoGuidara\QuickResponseCache\QuickResponseCacheServiceProvider" --tag="quick-laravel-responsecache-config"
+php artisan vendor:publish --provider="MarcoGuidara\QuickResponseCache\QuickResponseCacheServiceProvider"
 ```
 
 This is the contents of the published config file:

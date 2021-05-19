@@ -1,6 +1,8 @@
 <?php
 
-abstract class Events
+namespace MarcoGuidara\QuickResponseCache\Abstracts;
+
+abstract class EventAbstract
 {
     public const ALLOWED = [
         'created',
