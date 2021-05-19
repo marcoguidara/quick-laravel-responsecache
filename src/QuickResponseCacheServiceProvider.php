@@ -17,9 +17,6 @@ class QuickResponseCacheServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('quick-laravel-responsecache')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_quick-laravel-responsecache_table')
-            ->hasCommand(QuickResponseCacheCommand::class);
+            ->hasConfigFile('quick-responsecache');
     }
 }
