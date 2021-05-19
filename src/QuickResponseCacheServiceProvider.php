@@ -2,7 +2,7 @@
 
 namespace MarcoGuidara\QuickResponseCache;
 
-use MarcoGuidara\QuickResponseCache\Commands\QuickResponseCacheCommand;
+use MarcoGuidara\QuickResponseCache\Commands\ClearResponseCacheCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,6 +18,6 @@ class QuickResponseCacheServiceProvider extends PackageServiceProvider
         $package
             ->name('quick-laravel-responsecache')
             ->hasConfigFile('quick-responsecache')
-            ->hasCommand(QuickResponseCacheCommand::class);
+            ->hasCommand(ClearResponseCacheCommand::class);
     }
 }
