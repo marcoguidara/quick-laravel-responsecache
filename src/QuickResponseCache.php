@@ -6,18 +6,15 @@ use GeneaLabs\LaravelPivotEvents\Traits\PivotEventTrait;
 use MarcoGuidara\QuickResponseCache\Abstracts\EventAbstract;
 use Spatie\ResponseCache\Facades\ResponseCache;
 
-trait QuickResponseCache
+class QuickResponseCache
 {
-    use PivotEventTrait;
-
-    public static function boot()
+    public static function isEnabled()
     {
-        parent::boot();
-
-        if (config('quick-responsecache.enabled')) {
-            foreach (EventAbstract::ALLOWED as $event) {
-                static:: $event(fn () => ResponseCache::clear());
-            }
+        $config = config('quick-responsecache.enabled');
+        if (!is_bool($config)) {
+            return false;
         }
+
+        return $config;
     }
 }
