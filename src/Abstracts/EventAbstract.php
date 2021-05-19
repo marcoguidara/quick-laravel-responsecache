@@ -4,14 +4,17 @@ namespace MarcoGuidara\QuickResponseCache\Abstracts;
 
 abstract class EventAbstract
 {
-    public const ALLOWED = [
+    public const ELOQUENT = [
         'created',
         'updated',
         'deleted',
-        // 'restored',
-        // 'forceDeleted',
         'pivotAttached',
         'pivotDetached',
         'pivotUpdated',
+    ];
+
+    public const SOFT_DELETE = [
+        'restored',
+        'forceDeleted',
     ];
 }

@@ -17,8 +17,17 @@ trait QuickResposeCacheClear
     {
         parent::boot();
 
-        foreach (EventAbstract::ALLOWED as $event) {
+        $allowed_events = self::isSoftDeletable(static::class)
+            ? array_merge(EventAbstract::ELOQUENT, EventAbstract::SOFT_DELETE)
+            :  EventAbstract::ELOQUENT;
+
+        foreach ($allowed_events as $event) {
             static::$event(fn () => ResponseCache::clear());
         }
+    }
+
+    private static function isSoftDeletable(string $class): bool
+    {
+        return in_array('Illuminate\Database\Eloquent\SoftDeletes', class_uses($class));
     }
 }
