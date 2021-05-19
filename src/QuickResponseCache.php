@@ -2,9 +2,12 @@
 
 namespace MarcoGuidara\QuickResponseCache;
 
+use Spatie\ResponseCache\Facades\ResponseCache;
+use Spatie\ResponseCache\ResponseCache as ResponseCacheResponseCache;
+
 class QuickResponseCache
 {
-    public static function isEnabled()
+    public static function isEnabled(): bool
     {
         $config = config('quick-responsecache.enabled');
         if (! is_bool($config)) {
@@ -12,5 +15,10 @@ class QuickResponseCache
         }
 
         return $config;
+    }
+
+    public static function clear(): void
+    {
+        ResponseCache::clear();
     }
 }

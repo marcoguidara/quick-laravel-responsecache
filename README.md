@@ -36,6 +36,18 @@ return [
 
 ## Usage
 
+### Clearing cache
+
+#### Manullay
+```php
+QuickResponseCache::clear();
+```
+
+#### Using command
+```bash
+php artisan responsecache:clear
+```
+
 ```php
 WIP
 ```
